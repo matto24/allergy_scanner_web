@@ -1,0 +1,20 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appIDs": [
+                    "3M3T9UCJ27.com.example.barcodeScanner.RunnerTests"
+                ],
+                "paths": [
+                  "*"
+                ],
+                "components": [
+                    {
+                        "/": "*",
+                    }
+                ]
+            }
+        ]
+    }
+}
