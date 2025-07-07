@@ -1,27 +1,72 @@
+<!-- <!DOCTYPE html> -->
+<!-- <html lang="en"> -->
+<!-- <head> -->
+<!--     <meta charset="UTF-8"> -->
+<!--     <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<!--     <title>Allergi scanneren</title> -->
+<!--     <!-- Tailwind CSS for styling --> -->
+<!--     <script src="https://cdn.tailwindcss.com"></script> -->
+<!--     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> -->
+<!--     <style> -->
+<!--         /* Use Inter as the default font */ -->
+<!--         body { -->
+<!--             font-family: 'Inter', sans-serif; -->
+<!--         } -->
+<!--     </style> -->
+<!-- </head> -->
+<!-- <body class="bg-blue-600"> -->
+<!--     <!-- Main container to center the content --> -->
+<!--     <div class="flex items-center justify-center h-screen"> -->
+<!--         <!-- The main heading --> -->
+<!--         <h1 class="text-white text-4xl md:text-6xl font-bold"> -->
+<!--             Allergi scanneren -->
+<!--         </h1> -->
+<!--     </div> -->
+<!-- </body> -->
+<!-- </html> -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allergi scanneren</title>
-    <!-- Tailwind CSS for styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        /* Use Inter as the default font */
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
+  <title>Redirecting...</title>
+  <script type="text/javascript">
+    // This script runs as soon as the page loads
+    (function() {
+      // Get the 'data' parameter from the URL (e.g., ?data=...)
+      const urlParams = new URLSearchParams(window.location.search);
+      const profileData = urlParams.get('data');
+
+      // If the 'data' parameter exists, we proceed
+      if (profileData) {
+        // Reconstruct the custom app link
+        const appLink = "com.md.allergyapp://shared-profile?data=" + profileData;
+
+        // Attempt to redirect the browser to the app link
+        window.location.replace(appLink);
+
+        // FALLBACK: If the app isn't installed, the redirect above will fail.
+        // After a 2-second delay, we'll redirect to the app store.
+        // setTimeout(() => {
+        //   // IMPORTANT: Replace with your actual App Store / Play Store links
+        //   const iOS_store_link = "https://apps.apple.com/us/app/your-app/idYOUR_APP_ID";
+        //   const android_store_link = "https://play.google.com/store/apps/details?id=com.md.allergyapp";
+        //
+        //   // A simple check for the user's operating system
+        //   const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        //   if (/android/i.test(userAgent)) {
+        //     window.location.replace(android_store_link);
+        //   } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        //     window.location.replace(iOS_store_link);
+        //   }
+        // }, 2000);
+      }
+    })();
+  </script>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding-top: 50px; }
+  </style>
 </head>
-<body class="bg-blue-600">
-    <!-- Main container to center the content -->
-    <div class="flex items-center justify-center h-screen">
-        <!-- The main heading -->
-        <h1 class="text-white text-4xl md:text-6xl font-bold">
-            Allergi scanneren
-        </h1>
-    </div>
+<body>
+  <h1>Opening profile in app...</h1>
+  <p>If the app does not open automatically, please make sure it is installed.</p>
 </body>
 </html>
-
