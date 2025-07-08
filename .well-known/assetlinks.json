@@ -5,9 +5,9 @@
         ],
         "target": {
             "namespace": "android_app",
-            "package_name": "com.example.app",
+            "package_name": "com.example.barcode_scanner",
             "sha256_cert_fingerprints": [
-                "your sha256 key"
+                "71B6ED86865B8170D8CD196A8AB0A865A50AE0FEA494A71EE0C8F90041C3431D"
             ]
         }
     }
